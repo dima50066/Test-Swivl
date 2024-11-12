@@ -31,6 +31,7 @@ const GlobalStyles = createGlobalStyle`
   main {
   background-color: #ECF1F8;
   padding-top: 80px;
+  display: flex;
   }
 
   h1 {

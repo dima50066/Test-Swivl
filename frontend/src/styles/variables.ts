@@ -5,6 +5,8 @@ export const fonts = {
 
 export const fontSize = {
   xlTitle: '36px',
+  lgTitle: '24px',
+  lgBody: '18px',
   smBody: '16px',
   tabText: '14px',
 };
@@ -33,4 +35,6 @@ export const opacity = {
 
 export const fontWeight = {
   semibold: 600,
+  bold: 700,
+  normal: 400,
 };

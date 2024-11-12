@@ -3,6 +3,8 @@ import { colors, fontSize, fontWeight, fonts } from '../../styles/variables';
 
 export const ProfileContainer = styled.div`
   border-radius: 8px;
+  width: 350px;
+  height: 344px;
 `;
 
 export const ProfileHeader = styled.div`

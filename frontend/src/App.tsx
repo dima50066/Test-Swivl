@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Header/Header';
 import ProfileSidebar from './components/ProfileSidebar/ProfileSidebar';
-// import Feed from './components/Feed';
+import Feed from './components/Feed/Feed';
 
 const App: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const App: React.FC = () => {
       </header>
       <main className="section">
         <ProfileSidebar />
-        {/* <Feed /> */}
+        <Feed />
       </main>
     </>
   );

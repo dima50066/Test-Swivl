@@ -38,7 +38,7 @@ const ProfileSidebar: React.FC = () => {
             src="https://i.pravatar.cc/150?img=12"
             alt="User Avatar"
           />
-              </ProfileAvatarContainer>
+        </ProfileAvatarContainer>
         <UserInfo>
           <Username>Benjamin Clementine</Username>
           <Handle>@benclementine</Handle>

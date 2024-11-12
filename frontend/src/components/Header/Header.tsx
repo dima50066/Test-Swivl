@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import NotificationIcon from '../../icons/header/NotificationIcon';
-import ShareRecapIcon from '../../icons/header/ShareRecapIcon';
-import MediumIcon from '../../icons/header/MediumIcon';
-import ArrowDownIcon from '../../icons/header/ArrowDownIcon';
-import PlusButton from '../../icons/header/PlusButton';
-import LogoIcon from '../../icons/header/LogoIcon';
+import NotificationIcon from '../../icons/Header/NotificationIcon';
+import ShareRecapIcon from '../../icons/Header/ShareRecapIcon';
+import MediumIcon from '../../icons/Header/MediumIcon';
+import ArrowDownIcon from '../../icons/Header/ArrowDownIcon';
+import PlusButton from '../../icons/Header/PlusButton';
+import LogoIcon from '../../icons/Header/LogoIcon';
 
 import {
   HeaderContainer,
