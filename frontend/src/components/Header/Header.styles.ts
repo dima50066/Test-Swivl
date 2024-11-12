@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-import { colors, fonts, fontSize, fontWeight, opacity } from '../../styles/variables';
+import {
+  colors,
+  fonts,
+  fontSize,
+  fontWeight,
+  opacity,
+} from '../../styles/variables';
 import { customDropShadow } from '../../styles/mixins';
 
 export const HeaderContainer = styled.div`
@@ -43,7 +49,11 @@ export const PlusButtonWrapper = styled.div`
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(to right, ${colors.customOrange}, ${colors.customPink});
+  background: linear-gradient(
+    to right,
+    ${colors.customOrange},
+    ${colors.customPink}
+  );
   position: absolute;
   right: 40px;
   bottom: -35px;
@@ -76,7 +86,7 @@ export const Tab = styled.div<{ active: boolean }>`
     display: ${({ active }) => (active ? 'block' : 'none')};
     height: 4px;
     width: 100%;
-    background: linear-gradient(to right, #FF974F, #E32C75);
+    background: linear-gradient(to right, #ff974f, #e32c75);
     position: relative;
     bottom: -19px;
   }

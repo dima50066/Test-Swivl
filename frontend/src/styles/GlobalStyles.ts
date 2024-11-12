@@ -1,5 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
-import { fonts, colors, fontSize, lineHeight, fontWeight, boxShadow, opacity } from './variables';
+import {
+  fonts,
+  colors,
+  fontSize,
+  lineHeight,
+  fontWeight,
+  boxShadow,
+  opacity,
+} from './variables';
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -14,6 +22,15 @@ const GlobalStyles = createGlobalStyle`
     line-height: ${lineHeight.smBody};
     background-color: #f9f9f9;
     color: ${colors.primaryText};
+  }
+  
+  .section {
+  // padding-bottom: 40px;
+  }
+  
+  main {
+  background-color: #ECF1F8;
+  padding-top: 80px;
   }
 
   h1 {

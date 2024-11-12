@@ -9,11 +9,11 @@ export const customDropShadow = css`
 `;
 
 export const gradientText = css`
-  background: linear-gradient(to right, #E32C75, #FF974F);
+  background: linear-gradient(to right, #e32c75, #ff974f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 
 export const gradientBackground = css`
-  background: linear-gradient(to right, #E32C75, #FF974F);
+  background: linear-gradient(to right, #e32c75, #ff974f);
 `;

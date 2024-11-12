@@ -12,7 +12,15 @@ const ShareRecapIcon: React.FC<{ className?: string }> = ({ className }) => (
   >
     <g opacity="0.98">
       <rect opacity="0.01" width="32" height="32" fill="#EFF3F6" />
-      <rect x="10" y="12" width="12" height="10" rx="2" stroke="#3E4056" strokeWidth="2" />
+      <rect
+        x="10"
+        y="12"
+        width="12"
+        height="10"
+        rx="2"
+        stroke="#3E4056"
+        strokeWidth="2"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"

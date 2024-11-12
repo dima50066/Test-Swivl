@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import NotificationIcon from '../../icons/NotificationIcon';
-import ShareRecapIcon from '../../icons/ShareRecapIcon';
-import MediumIcon from '../../icons/MediumIcon';
-import ArrowDownIcon from '../../icons/ArrowDownIcon';
-import PlusButton from '../../icons/PlusButton';
-import LogoIcon from '../../icons/LogoIcon';
+import NotificationIcon from '../../icons/header/NotificationIcon';
+import ShareRecapIcon from '../../icons/header/ShareRecapIcon';
+import MediumIcon from '../../icons/header/MediumIcon';
+import ArrowDownIcon from '../../icons/header/ArrowDownIcon';
+import PlusButton from '../../icons/header/PlusButton';
+import LogoIcon from '../../icons/header/LogoIcon';
 
 import {
   HeaderContainer,
@@ -18,27 +18,27 @@ import {
 } from './Header.styles';
 
 const tabs = [
-  { name: "FEED", id: "feed" },
-  { name: "EXPLORE", id: "explore" },
-  { name: "DISCUSSIONS", id: "discussions" },
+  { name: 'FEED', id: 'feed' },
+  { name: 'EXPLORE', id: 'explore' },
+  { name: 'DISCUSSIONS', id: 'discussions' },
 ];
 
 const Header: React.FC = () => {
-  const [activeTab, setActiveTab] = useState("feed");
+  const [activeTab, setActiveTab] = useState('feed');
 
   return (
     <HeaderContainer>
       {/* Row 1: Logo and User Section */}
       <HeaderRow>
-        <LogoIcon/>
+        <LogoIcon />
         <UserInfo>
           <span>Arthur Wood</span>
           <Avatar src="https://i.pravatar.cc/150?img=12" alt="User Avatar" />
-          <ArrowDownIcon/>
+          <ArrowDownIcon />
           <IconsContainer>
-            <NotificationIcon/>
-            <ShareRecapIcon  />
-            <MediumIcon/>
+            <NotificationIcon />
+            <ShareRecapIcon />
+            <MediumIcon />
           </IconsContainer>
           <PlusButtonWrapper>
             <PlusButton />
