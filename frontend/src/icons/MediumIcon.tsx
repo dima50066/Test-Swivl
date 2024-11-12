@@ -8,6 +8,7 @@ const MediumIcon: React.FC<{ className?: string }> = ({ className }) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className={className}
+    style={{ cursor: 'pointer' }}
   >
     <g opacity="0.98">
       <rect opacity="0.01" width="32" height="32" fill="#EFF3F6" />
