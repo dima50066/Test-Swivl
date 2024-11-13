@@ -12,8 +12,22 @@ export const fontSize = {
 };
 
 export const lineHeight = {
-  normal: 'normal',
+  normal: '150%',
   smBody: '1.5',
+  tabText: '108%',
+  lgBody: '125%',
+  xlTitle: '133%',
+};
+
+export const fontWeight = {
+  semibold: 600,
+  bold: 700,
+  normal: 400,
+};
+
+export const letterSpacing = {
+  normal: '0.02em',
+  wide: '-0.03em',
 };
 
 export const colors = {
@@ -22,6 +36,7 @@ export const colors = {
   thirdText: '#636363',
   customOrange: '#FF974F',
   customPink: '#E32C75',
+  buttonEdit: '#f05d63',
 };
 
 export const boxShadow = {
@@ -31,10 +46,4 @@ export const boxShadow = {
 
 export const opacity = {
   60: '0.6',
-};
-
-export const fontWeight = {
-  semibold: 600,
-  bold: 700,
-  normal: 400,
 };

@@ -14,6 +14,7 @@ export const HeaderContainer = styled.div`
   padding: 10px 32px;
   position: relative;
   ${customDropShadow};
+  padding-inline: 135px;
 `;
 
 export const HeaderRow = styled.div`
@@ -55,7 +56,7 @@ export const PlusButtonWrapper = styled.div`
     ${colors.customPink}
   );
   position: absolute;
-  right: 40px;
+  right: 135px;
   bottom: -35px;
   filter: drop-shadow(0px 2px 4px #4b53a9);
 `;
@@ -73,14 +74,13 @@ export const Tab = styled.div<{ active: boolean }>`
   cursor: pointer;
   color: ${colors.primaryText};
   opacity: ${({ active }) => (active ? '1' : opacity[60])};
-  padding-bottom: 8px; /* Додатковий відступ під текстом */
+  padding-bottom: 8px;
 
   &:hover {
     color: ${colors.primaryText};
     opacity: 1;
   }
 
-  /* Підкреслення для активного табу */
   &::after {
     content: '';
     display: ${({ active }) => (active ? 'block' : 'none')};

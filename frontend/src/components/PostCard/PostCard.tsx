@@ -1,41 +1,70 @@
 import React from 'react';
+import LinkIcon from '../../icons/PostCard/LinkIcon';
+import LikeIcon from '../../icons/PostCard/LikeIcon';
+import PlayIcon from '../../icons/PostCard/PlayIcon';
 import {
   PostCardContainer,
   PostContent,
   AuthorInfo,
   Metadata,
-  ActionButtons,
+  ShareButton,
+  SharedText,
+  PostFooter,
+  Avatar,
 } from './PostCard.styles';
 
 interface PostCardProps {
   title: string;
   author: string;
-  likes: number;
-  comments: number;
+  likes?: number;
+  comments?: number;
   isShared?: boolean;
   sharedText?: string;
+  avatar?: string;
 }
 
 const PostCard: React.FC<PostCardProps> = ({
   title,
   author,
-  likes,
-  comments,
+  likes = 0,
+  comments = 0,
   isShared,
   sharedText,
+  avatar,
 }) => {
+  const hasLikesOrComments = likes > 0 || comments > 0;
+
   return (
     <PostCardContainer>
-      {isShared && sharedText && <span>{sharedText}</span>}
+      {isShared && sharedText && (
+        <SharedText>
+          <LinkIcon /> {sharedText}
+        </SharedText>
+      )}
       <PostContent>{title}</PostContent>
-      <AuthorInfo>by {author}</AuthorInfo>
-      <Metadata>
-        <span>{likes} Likes</span>
-        <span>{comments} Comments</span>
-      </Metadata>
-      <ActionButtons>
-        <button>Share</button>
-      </ActionButtons>
+      <PostFooter>
+        <AuthorInfo>
+          {avatar ? <Avatar src={avatar} alt={author} /> : 'by'} {author}
+        </AuthorInfo>
+        {hasLikesOrComments ? (
+          <Metadata>
+            {likes > 0 && (
+              <>
+                <LikeIcon /> <span>{likes}</span>
+              </>
+            )}
+            {comments > 0 && (
+              <>
+                <PlayIcon /> <span>{comments}</span>
+              </>
+            )}
+          </Metadata>
+        ) : (
+          <ShareButton>
+            <button>Share</button>
+          </ShareButton>
+        )}
+      </PostFooter>
     </PostCardContainer>
   );
 };

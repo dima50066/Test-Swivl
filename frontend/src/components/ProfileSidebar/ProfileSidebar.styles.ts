@@ -1,54 +1,71 @@
 import styled from 'styled-components';
-import { colors, fontSize, fontWeight, fonts } from '../../styles/variables';
+import {
+  colors,
+  fontSize,
+  fontWeight,
+  fonts,
+  lineHeight,
+  letterSpacing,
+} from '../../styles/variables';
 
 export const ProfileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
-  width: 350px;
-  height: 344px;
+  max-width: 350px;
+  gap: 24px;
 `;
 
 export const ProfileHeader = styled.div`
   display: flex;
   align-items: flex-start;
-  margin-bottom: 10px;
+  gap: 24px;
 `;
 
 export const ProfileAvatarContainer = styled.div`
-  margin-right: 15px;
+  // margin-right: 15px;
 `;
 
 export const ProfileAvatar = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 `;
 
 export const UserInfo = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 8px;
 `;
 
 export const Username = styled.h2`
-  font-size: 18px;
-  font-weight: bold;
+  font-family: ${fonts.montserrat};
+  font-size: ${fontSize.lgTitle};
+  line-height: ${lineHeight.tabText};
+  font-weight: ${fontWeight.semibold};
+  color: ${colors.secondaryText};
   margin: 0;
 `;
 
 export const Handle = styled.p`
-  color: #555;
-  margin: 5px 0;
+  font-family: ${fonts.opensans};
+  font-weight: ${fontWeight.normal};
+  font-size: ${fontSize.tabText};
+  line-height: ${lineHeight.lgBody};
+  letter-spacing: ${letterSpacing.wide};
+  color: ${colors.secondaryText};
 `;
 
 export const EditProfileButton = styled.button`
   display: flex;
   align-items: center;
-  font-size: 14px;
-  color: #e63946;
+  color: ${colors.buttonEdit};
   background: none;
   border: none;
   cursor: pointer;
   margin-top: 5px;
   text-decoration: underline;
+  font-size: ${fontSize.smBody};
 `;
 
 export const OptionsButtonContainer = styled.div`
@@ -62,20 +79,21 @@ export const OptionsButtonContainer = styled.div`
 export const StatsContainer = styled.div`
   display: flex;
   gap: 48px;
-  margin: 15px 0;
 `;
 
 export const StatItem = styled.div`
   text-align: center;
 
   span {
-    font-weight: bold;
-    font-size: 16px;
+    font-family: ${fonts.opensans};
+    font-weight: ${fontWeight.bold};
+    font-size: ${fontSize.lgBody};
+    line-height: ${lineHeight.xlTitle};
   }
 
   p {
-    font-size: 12px;
-    color: #555;
+    font-size: ${fontSize.smBody};
+    font-weight: ${fontWeight.normal};
   }
 `;
 
@@ -88,12 +106,11 @@ export const StatItemP = styled.p`
 `;
 
 export const Bio = styled.p`
-  display: flex;
-  font-size: 14px;
+  font-family: ${fonts.opensans};
+  font-weight: ${fontWeight.normal};
+  font-size: ${fontSize.smBody};
   color: ${colors.secondaryText};
-  margin-top: 10px;
-  line-height: 1.4;
-  position: relative;
+  line-height: ${lineHeight.normal};
 `;
 
 export const DropdownMenu = styled.div`
