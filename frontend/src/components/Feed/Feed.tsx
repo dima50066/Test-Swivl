@@ -54,9 +54,9 @@ const posts: Post[] = [
 
 const Feed: React.FC = () => {
   return (
-    <>
+    <section aria-label="User Feed">
       <FeedWrapper>
-        <ToggleSwitch />
+        <ToggleSwitch aria-label="Toggle Feed View" />
         {posts.map((post, index) => (
           <PostCard
             key={index}
@@ -70,7 +70,7 @@ const Feed: React.FC = () => {
           />
         ))}
       </FeedWrapper>
-    </>
+    </section>
   );
 };
 

@@ -31,7 +31,6 @@ const ProfileSidebar: React.FC = () => {
 
   return (
     <ProfileContainer>
-      {/* Profile Header */}
       <ProfileHeader>
         <ProfileAvatarContainer>
           <ProfileAvatar
@@ -42,21 +41,23 @@ const ProfileSidebar: React.FC = () => {
         <UserInfo>
           <Username>Benjamin Clementine</Username>
           <Handle>@benclementine</Handle>
-          <EditProfileButton>
+          <EditProfileButton aria-label="Edit Profile">
             <EditIcon color="#e63946" />
             Edit Profile
           </EditProfileButton>
         </UserInfo>
-        <OptionsButtonContainer onClick={toggleDropdown}>
+        <OptionsButtonContainer
+          onClick={toggleDropdown}
+          aria-label="More Options"
+        >
           <OptionsIcon />
-          {/* Dropdown Menu */}
           {isDropdownOpen && (
             <DropdownMenu>
-              <DropdownItem>
+              <DropdownItem role="button">
                 <ReportIcon />
                 Report User
               </DropdownItem>
-              <DropdownItem>
+              <DropdownItem role="button">
                 <BlockIcon />
                 Block User
               </DropdownItem>
@@ -65,29 +66,31 @@ const ProfileSidebar: React.FC = () => {
         </OptionsButtonContainer>
       </ProfileHeader>
 
-      {/* Stats */}
-      <StatsContainer>
-        <StatItem>
-          <StatItemSpan>45</StatItemSpan>
-          <StatItemP>synth</StatItemP>
-        </StatItem>
-        <StatItem>
-          <StatItemSpan>110</StatItemSpan>
-          <StatItemP>followers</StatItemP>
-        </StatItem>
-        <StatItem>
-          <StatItemSpan>332</StatItemSpan>
-          <StatItemP>following</StatItemP>
-        </StatItem>
-      </StatsContainer>
+      <section aria-label="User Stats">
+        <StatsContainer>
+          <StatItem>
+            <StatItemSpan>45</StatItemSpan>
+            <StatItemP>synth</StatItemP>
+          </StatItem>
+          <StatItem>
+            <StatItemSpan>110</StatItemSpan>
+            <StatItemP>followers</StatItemP>
+          </StatItem>
+          <StatItem>
+            <StatItemSpan>332</StatItemSpan>
+            <StatItemP>following</StatItemP>
+          </StatItem>
+        </StatsContainer>
+      </section>
 
-      {/* Bio */}
-      <Bio>
-        Cryptocurrencies including Ethereum, Ripple, and Litecoin have all
-        plunged between 20 to 30 percent each, according to CoinMarketCap. Here
-        is the latest Ripple price news and live updates on XRP, bitcoin, and
-        Ethereum.
-      </Bio>
+      <section aria-label="User Bio">
+        <Bio>
+          Cryptocurrencies including Ethereum, Ripple, and Litecoin have all
+          plunged between 20 to 30 percent each, according to CoinMarketCap.
+          Here is the latest Ripple price news and live updates on XRP, bitcoin,
+          and Ethereum.
+        </Bio>
+      </section>
     </ProfileContainer>
   );
 };

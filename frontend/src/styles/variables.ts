@@ -37,6 +37,8 @@ export const colors = {
   customOrange: '#FF974F',
   customPink: '#E32C75',
   buttonEdit: '#f05d63',
+  background: '#f9f9f9',
+  hoverBackground: '#ecf1f8',
 };
 
 export const boxShadow = {

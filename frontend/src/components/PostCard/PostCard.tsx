@@ -41,7 +41,9 @@ const PostCard: React.FC<PostCardProps> = ({
           <LinkIcon /> {sharedText}
         </SharedText>
       )}
-      <PostContent>{title}</PostContent>
+      <article aria-label="Post Content">
+        <PostContent>{title}</PostContent>
+      </article>
       <PostFooter>
         <AuthorInfo>
           {avatar ? <Avatar src={avatar} alt={author} /> : 'by'} {author}
@@ -49,19 +51,19 @@ const PostCard: React.FC<PostCardProps> = ({
         {hasLikesOrComments ? (
           <Metadata>
             {likes > 0 && (
-              <>
-                <LikeIcon /> <span>{likes}</span>
-              </>
+              <span aria-label="Likes">
+                <LikeIcon /> {likes}
+              </span>
             )}
             {comments > 0 && (
-              <>
-                <PlayIcon /> <span>{comments}</span>
-              </>
+              <span aria-label="Comments">
+                <PlayIcon /> {comments}
+              </span>
             )}
           </Metadata>
         ) : (
           <ShareButton>
-            <button>Share</button>
+            <button aria-label="Share Post">Share</button>
           </ShareButton>
         )}
       </PostFooter>
