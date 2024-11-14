@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import EditIcon from '../../icons/ProfileSideBar/EditIcon';
-import OptionsIcon from '../../icons/ProfileSideBar/OptionsIcon';
-import BlockIcon from '../../icons/ProfileSideBar/BlockIcon';
-import ReportIcon from '../../icons/ProfileSideBar/ReportIcon';
+import EditIcon from '../../icons/ProfileSideBar/editicon';
+import OptionsIcon from '../../icons/ProfileSideBar/optionsicon';
+import BlockIcon from '../../icons/ProfileSideBar/blockicon';
+import ReportIcon from '../../icons/ProfileSideBar/reporticon';
 import {
   ProfileContainer,
   ProfileHeader,
@@ -20,7 +20,7 @@ import {
   DropdownItem,
   StatItemSpan,
   StatItemP,
-} from './ProfileSidebar.styles';
+} from './profilesidebar.styles';
 
 const ProfileSidebar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

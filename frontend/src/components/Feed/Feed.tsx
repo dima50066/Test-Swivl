@@ -1,7 +1,7 @@
 import React from 'react';
-import PostCard from '../PostCard/PostCard';
-import ToggleSwitch from '../ToggleSwitch/ToggleSwitch';
-import { FeedWrapper } from './Feed.styles';
+import PostCard from '../PostCard/postcard';
+import ToggleSwitch from '../ToggleSwitch/toggleswitch';
+import { FeedWrapper } from './feed.styles';
 
 interface Post {
   title: string;

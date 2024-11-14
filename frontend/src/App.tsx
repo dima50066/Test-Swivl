@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Header/Header';
-import ProfileSidebar from './components/ProfileSidebar/ProfileSidebar';
+import ProfileSidebar from './components/ProfileSidebar/profilesidebar';
 import Feed from './components/Feed/Feed';
 
 const App: React.FC = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
-import LinkIcon from '../../icons/PostCard/LinkIcon';
-import LikeIcon from '../../icons/PostCard/LikeIcon';
-import PlayIcon from '../../icons/PostCard/PlayIcon';
+import LinkIcon from '../../icons/PostCard/linkicon';
+import LikeIcon from '../../icons/PostCard/likeicon';
+import PlayIcon from '../../icons/PostCard/playicon';
 import {
   PostCardContainer,
   PostContent,
@@ -11,7 +11,7 @@ import {
   SharedText,
   PostFooter,
   Avatar,
-} from './PostCard.styles';
+} from './postcard.styles';
 
 interface PostCardProps {
   title: string;

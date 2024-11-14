@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import NotificationIcon from '../../icons/Header/NotificationIcon';
-import ShareRecapIcon from '../../icons/Header/ShareRecapIcon';
-import MediumIcon from '../../icons/Header/MediumIcon';
-import ArrowDownIcon from '../../icons/Header/ArrowDownIcon';
-import PlusButton from '../../icons/Header/PlusButton';
-import LogoIcon from '../../icons/Header/LogoIcon';
+import NotificationIcon from '../../icons/Header/notificationIcon';
+import ShareRecapIcon from '../../icons/Header/shareRecapIcon';
+import MediumIcon from '../../icons/Header/mediumIcon';
+import ArrowDownIcon from '../../icons/Header/arrowDownIcon';
+import PlusButton from '../../icons/Header/plusButton';
+import LogoIcon from '../../icons/Header/logoIcon';
 
 import {
   HeaderContainer,
@@ -15,7 +15,7 @@ import {
   PlusButtonWrapper,
   TabsContainer,
   Tab,
-} from './Header.styles';
+} from './header.styles';
 
 const tabs = [
   { name: 'FEED', id: 'feed' },

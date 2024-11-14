@@ -5,7 +5,7 @@ import {
   ToggleLabel,
   Switch,
   SwitchToggle,
-} from './ToggleSwitch.styles';
+} from './toggleswitch.styles';
 
 const ToggleSwitch: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
