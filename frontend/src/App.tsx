@@ -6,12 +6,19 @@ import Feed from './components/Feed/Feed';
 const App: React.FC = () => {
   return (
     <>
-      <header className="section">
+      <header role="banner" aria-label="Main Navigation">
         <Navbar />
       </header>
-      <main className="section">
-        <ProfileSidebar />
-        <Feed />
+      <main role="main" aria-labelledby="main-content" className="section">
+        <aside role="complementary" aria-label="User Profile Sidebar">
+          <ProfileSidebar />
+        </aside>
+        <section aria-labelledby="feed-section">
+          <h1 id="feed-section" style={{ display: 'none' }}>
+            User Feed
+          </h1>
+          <Feed />
+        </section>
       </main>
     </>
   );

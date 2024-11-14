@@ -17,20 +17,20 @@ export const ToggleLabel = styled.span`
   color: ${colors.primaryText};
 `;
 
-export const Switch = styled.div<{ isActive: boolean }>`
+export const Switch = styled.div<{ $isActive: boolean }>`
   position: relative;
   width: 40px;
   height: 24px;
-  background-color: ${({ isActive }) => (isActive ? '#ed5267' : '#ddd')};
+  background-color: ${({ $isActive }) => ($isActive ? '#ed5267' : '#ddd')};
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
 `;
 
-export const SwitchToggle = styled.div<{ isActive: boolean }>`
+export const SwitchToggle = styled.div<{ $isActive: boolean }>`
   position: absolute;
   top: 4px;
-  left: ${({ isActive }) => (isActive ? '20px' : '2px')};
+  left: ${({ $isActive }) => ($isActive ? '20px' : '2px')};
   width: 16px;
   height: 16px;
   background-color: white;

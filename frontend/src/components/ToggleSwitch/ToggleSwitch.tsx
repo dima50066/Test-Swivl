@@ -17,8 +17,8 @@ const ToggleSwitch: React.FC = () => {
   return (
     <ToggleContainer>
       <ToggleLabel>Public</ToggleLabel>
-      <Switch isActive={isActive} onClick={toggleSwitch}>
-        <SwitchToggle isActive={isActive} />
+      <Switch $isActive={isActive} onClick={toggleSwitch}>
+        <SwitchToggle $isActive={isActive} />
       </Switch>
       <ToggleLabel>Private</ToggleLabel>
     </ToggleContainer>

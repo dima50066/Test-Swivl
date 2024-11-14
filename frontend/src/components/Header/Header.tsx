@@ -28,7 +28,6 @@ const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
-      {/* Row 1: Logo and User Section */}
       <HeaderRow>
         <LogoIcon />
         <UserInfo>
@@ -46,18 +45,21 @@ const Header: React.FC = () => {
         </UserInfo>
       </HeaderRow>
 
-      {/* Row 2: Navigation */}
-      <TabsContainer>
-        {tabs.map((tab) => (
-          <Tab
-            key={tab.id}
-            active={activeTab === tab.id}
-            onClick={() => setActiveTab(tab.id)}
-          >
-            {tab.name}
-          </Tab>
-        ))}
-      </TabsContainer>
+      <nav aria-label="Primary Navigation">
+        <TabsContainer>
+          {tabs.map((tab) => (
+            <Tab
+              key={tab.id}
+              role="button"
+              aria-pressed={activeTab === tab.id}
+              $active={activeTab === tab.id}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              {tab.name}
+            </Tab>
+          ))}
+        </TabsContainer>
+      </nav>
     </HeaderContainer>
   );
 };
